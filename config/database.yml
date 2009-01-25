@@ -19,7 +19,7 @@ development:
   encoding: utf8
   database: peter_development
   username: root
-  password: s3cr3t
+  password: "s3cr3t"
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -38,5 +38,5 @@ production:
   encoding: utf8
   database: peter_production
   username: root
-  password: 
-  socket: /tmp/mysql.sock
+  password: chang3m3
+  #socket: /tmp/mysql.sock
