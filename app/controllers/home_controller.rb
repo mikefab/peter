@@ -21,7 +21,7 @@ class HomeController < ApplicationController
 #    unless page.nil?
 #      render :text => page.to_html, :layout => true
 #    else
-      render :text => "write it up!"
+    render :action => "write_legislator", :layout => true
 #    end
   end
 
@@ -31,7 +31,7 @@ class HomeController < ApplicationController
 #    unless page.nil?
 #      render :text => page.to_html, :layout => true
 #    else
-      render :text => "leave a comment, yo", :layout => true
+  render :action => "comments_and_forum", :layout => true
 #    end
   end
 
