@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title> </title>
+  <%= stylesheet_link_tag 'scaffold' %>
+</head>
+<body>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<div id="tabsE">
+  <ul>
+    <li><a href="/police_reports" title="Link 1"><span> Police Reports </span></a>&nbsp</li>
+    <li><a href="/write_legislator" title="Link 2"><span> Write Your Legislator </span></a></li>
+    <li><a href="/comments_and_forum" title="Link 3"><span> Comments & Forum </span></a></li>
+
+
+  </ul>
+</div>
+
+
+<%= yield  %>
+
+</body>
+</html>
