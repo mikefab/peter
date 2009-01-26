@@ -39,4 +39,4 @@ production:
   database: peter_production
   username: root
   password: chang3m3
-  socket: /var/run/mysqld/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
