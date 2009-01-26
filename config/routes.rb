@@ -1,7 +1,14 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :users
+
 
 
   map.root :controller => 'home'
+
+  map.police_reports '/police_reports', :controller => 'home', :action => 'police_reports'
+  map.write_legislator '/write_legislator', :controller => 'home', :action => 'write_legislator'
+  map.comments_and_forum '/comments_and_forum', :controller => 'home', :action => 'comments_and_forum'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
 
