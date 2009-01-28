@@ -1,8 +1,7 @@
 class HomeController < ApplicationController
 
-  def index
-    page = ComatosePage.find_by_path("introduction")
-    render :text => page.to_html, :layout => true
+  def index    
+      render :action => "introduction", :layout => true
   end
 
 
