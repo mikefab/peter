@@ -9,6 +9,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.root :controller => 'home'
 
+  map.introduction '/introduction', :controller => 'home', :action => 'introduction'
   map.police_reports '/police_reports', :controller => 'home', :action => 'police_reports'
   map.write_legislator '/write_legislator', :controller => 'home', :action => 'write_legislator'
   map.comments_and_forum '/comments_and_forum', :controller => 'home', :action => 'comments_and_forum'

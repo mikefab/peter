@@ -1,9 +1,12 @@
 class HomeController < ApplicationController
 
   def index    
-      render :action => "introduction", :layout => true
+      render :action => "home", :layout => true
   end
 
+  def introduction    
+      render :action => "introduction", :layout => true
+  end
 
   def police_reports
 #    page = ComatosePage.find_by_path("police-reports")
