@@ -1,0 +1,8 @@
+<% div_for comment do %>
+  <p>
+    Posted <%= time_ago_in_words(comment.created_at) %>
+    ago by  <strong> <%= h(comment.name) %></strong></br>
+    <p><%= h(comment.body) %> </p>
+    </p>
+  <% end %>
+  
