@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :comments
+
+  map.resources :posts, :has_many => :comments
+
 
   map.resources :sessions
   map.resources :users
