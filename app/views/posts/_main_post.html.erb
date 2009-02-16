@@ -8,7 +8,9 @@
 <h2>Comments</h2>
 <div id = "comments">
   <% @post = Post.find(:first) %>
+  <% unless @post.comments.empty? %>
   <%= render :partial => @post.comments.reverse %>
+  <% end %>
 </div>
 
 <% form_for [@post, Comment.new] do |f| %>
