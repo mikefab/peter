@@ -1,4 +1,6 @@
 <div class="action">
+  <%= link_to ('Manage Forum Comments', comments_and_forum_path) %>
+
   <%= link_to 'Clear Page Cache', :controller=>controller.controller_name, :action=>'expire_page_cache' %>
 <% if Comatose.config.allow_import_export %>
   <%= link_to 'Import', '#', :id => 'import_link2', :onclick => "$('import_form').setStyle({display: 'inline'}); return false;" %>
