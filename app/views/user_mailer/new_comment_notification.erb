@@ -1,0 +1,11 @@
+A new comment has been posted.
+
+<% unless @comment.name.nil? %>
+  Email: <%= @comment.name %>
+<% end %>
+
+<% unless @comment.email.nil? %>
+  Email: <%= @comment.email %>
+<% end %>
+
+<%= @comment.body %>
