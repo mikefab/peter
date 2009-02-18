@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
   def create
     @post = Post.find(params[:post_id]) 
     @comment = @post.comments.create!(params[:comment])
-    debugger
+    UserMailer.deliver_new_comment_notification(@comment)
     respond_to do |format|
       format.html {redirect_to comments_and_forum_path }
       format.js
