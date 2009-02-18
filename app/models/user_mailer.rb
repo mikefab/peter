@@ -1,14 +1,8 @@
 class UserMailer < ActionMailer::Base
 
-  def testy(user)
-    recipients "mikefabrikant@gmail.com"
-    from "webmaster@rememberingpeter.com"
-    subject "test test"
-    body "test"
-  end
 
   def new_comment_notification(comment)
-    recipients user.email
+    recipients "bluedistance@gmail.com, mikefabrikant@gmail.com"
     from       "webmaster@rememberingpeter.com"
     subject    "A new comment has been posted"
     body       :comment => comment
