@@ -19,6 +19,9 @@
     <li><a href="/police_reports" title="Link 1"><span> Police Reports </span></a></li>
     <li><a href="/write_legislator" title="Link 2"><span> Write Your Legislator </span></a></li>
     <li><a href="/comments_and_forum" title="Link 3"><span> Comments & Forum </span></a></li>
+    <% if logged_in? %>
+    <li><a href="/logout" title="Link 3"><span> log out </span></a></li>
+    <% end %>
   </ul>
 </div>
 
