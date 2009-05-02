@@ -6,7 +6,7 @@ body, p, ol, ul, td {
   font-size:   13px;
   line-height: 18px;
 }
-p.margin {margin: 1cm 1cm 1cm 1cm}
+p {margin: .5cm }
 pre {
   background-color: #eee;
   padding: 10px;
