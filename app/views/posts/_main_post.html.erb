@@ -8,7 +8,7 @@
 <h2>Comments</h2>
 <div id = "comments">
   <% @post = Post.find(:first) %>
-  <%= render :partial => @post.comments.find(:all, :order => :created_at) %>
+  <%= render :partial => @post.comments.find(:all, :order => :created_at).reverse %>
 </div>
 
 <% form_for [@post, Comment.new] do |f| %>
