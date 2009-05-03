@@ -28,7 +28,7 @@ class CommentsController < ApplicationController
   def load_post
 
     @post = Post.find(params[:post_id])
-    logger.debug @content.class
+
 
   end
 
