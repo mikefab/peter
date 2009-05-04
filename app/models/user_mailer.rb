@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
   def new_comment_notification(comment)
     recipients "bluedistance@gmail.com, mikefabrikant@gmail.com"
-    from       "webmaster@rememberingpeter.com"
+    from       "webmaster@rememberingpeter.info"
     subject    "A new comment has been posted"
     body       :comment => comment
   end
