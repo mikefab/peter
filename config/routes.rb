@@ -12,7 +12,7 @@ ActionController::Routing::Routes.draw do |map|
   map.logout    '/logout',    :controller => 'sessions',  :action => 'destroy'
 
   map.root :controller => 'home'
-
+  map.simple_captcha '/simple_captcha/:action', :controller => 'simple_captcha'
   map.introduction '/introduction', :controller => 'home', :action => 'introduction'
   map.police_reports '/police_reports', :controller => 'home', :action => 'police_reports'
   map.write_legislator '/write_legislator', :controller => 'home', :action => 'write_legislator'

@@ -2,8 +2,13 @@ class CommentsController < ApplicationController
   before_filter :load_post
   def create
     @post = Post.find(params[:post_id]) 
-    @comment = @post.comments.create!(params[:comment])
-    UserMailer.deliver_new_comment_notification(@comment)
+    if simple_captcha_valid?
+      @comment = @post.comments.create!(params[:comment])
+      UserMailer.deliver_new_comment_notification(@comment)
+    else
+      flash[:notice] = "The code you entered was incorrect, please try again."
+      
+    end
     respond_to do |format|
       format.html {redirect_to comments_and_forum_path }
       format.js
